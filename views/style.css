@@ -1,0 +1,75 @@
+/* style.css */
+
+/* Apply styles to the main container */
+.main {
+    margin: 20px;
+}
+
+/* Apply styles to each post */
+.post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid gold;
+    
+}
+
+/* Apply styles to the "Create new post" link */
+a.create-link {
+    display: block;
+    margin-top: 20px;
+}
+
+h1{
+ margin: 0;  
+ padding: 0;
+}
+
+p{
+    font: 1em sans-serif;
+    font-weight: 700;
+}
+
+a{
+color: black;
+text-decoration: none;
+border: 2px solid black;
+border-radius: 7px;
+font: 1em sans-serif;
+font-weight: 650;
+padding: 3px;
+}
+
+button{
+    font-weight: 700;
+    color: red;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 7px;
+}
+
+button:hover{
+    background-color: black;
+    font-size: 17px;
+    transition-duration: 300ms;
+}
+
+a:hover{
+  font-size: 17px;
+  color: white;
+  background-color: black;
+}
+
+
+/* Style for createing post form */
+
+.Create_post{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  border: 2px solid black;
+}

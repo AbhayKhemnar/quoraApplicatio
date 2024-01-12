@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 80vh;
+            width: 100wh;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .Create_post{ 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            background-color: rgb(215, 165, 165);
+            border: 4px solid gold;
+            padding: 100px;
+            border-radius: 10px;
+        }
+
+        input{
+            font-weight: 700;
+            border-radius: 7px;
+            padding: 5px;
+        }
+
+        textarea{
+            border-radius: 10px;
+            width: 300px;
+            font-weight: 800;
+            font-size: larger;
+        }
+      
+        button{
+    font-weight: 700;
+    color: rgb(66, 49, 49);
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 7px;
+        }
+
+        button:hover{
+    background-color: rgb(236, 98, 98);
+    font-size: 17px;
+    transition-duration: 300ms;
+
+    .gender{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+}
+    </style>
+    
+</head>
+<body>
+    
+    <form method="post" action="http://localhost:8080/posts">
+     <div class="main">
+       <div class="Create_post"> 
+          <input type="text" name="name" placeholder="Enter Name"/>
+          <input name="age" type="number" min="10" max="100" placeholder="age"/>
+          <div class="gender">
+         <label>MALE</label> <input name="gender" value="male" type="radio" />
+          <lable>FEMALE</lable><input name="gender" value="female" type="radio" />
+          </div>
+          <textarea type="text" name="comment" placeholder="Comment" rows="5"></textarea>
+          <button>summit</button> 
+       </div>
+    </div>
+        </form>
+ 
+</body>
+</html>
